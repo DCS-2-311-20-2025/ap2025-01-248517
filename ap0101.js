@@ -55,9 +55,7 @@ function init() {
   // カメラの設定
   const camera = new THREE.PerspectiveCamera(
     60, window.innerWidth/window.innerHeight, 0.1, 1000);
-  camera.position.x = 25;
-  camera.position.y = 15;
-  camera.position.z = 30;
+  camera.position.set(40, 30, 20);
   camera.lookAt(0, 4, 0);
 
   // レンダラの設定
